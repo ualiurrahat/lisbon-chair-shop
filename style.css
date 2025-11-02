@@ -55,6 +55,12 @@ h2 {
   text-decoration: none;
   font-weight: 500;
   text-transform: uppercase;
+  border-radius: 100px;
+  /*Note:
+  1. for square shape element, use border-radius : 50%;
+  for circular radius.
+  2. for un-squared shape, use border-radius value more than the height of the element. Just like we used 100px here, which is greater than all the button's height
+  */
 }
 .btn:hover,
 .btn:active {
@@ -100,6 +106,7 @@ h1 {
 
 img {
   width: 100%;
+  border-radius: 12px;
 }
 
 /* FEATURES */
@@ -125,6 +132,7 @@ img {
   background-color: #087f5b;
   color: #fff;
   padding: 24px;
+  border-radius: 12px;
 }
 
 .testimonial-box {
@@ -146,6 +154,13 @@ img {
 }
 
 /* CHAIRS */
+.chair {
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+}
+.chair img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
 .chair-box {
   padding: 24px;
 }
